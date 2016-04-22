@@ -21,14 +21,35 @@ blockquote {
 }*/
 
 .wrap {
-  background: red;
+  width: 600px;
+  margin: auto;
 }
 
 .content {
+  float: left;
   background: green;
+  width: 500px;
+
+}
+form li{
+  list-style-type: none;
+  display: block;
 }
 
-aside {
-  float: left;
+li {
+  display: inline;
+  padding-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+ aside {
   background: blue;
+  float: right;
+  width: 45S0px;
 }
