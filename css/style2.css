@@ -1,0 +1,18 @@
+
+
+
+.content {
+  float: right;
+  margin-left:30px;
+  width: 270px;
+}
+
+img{
+  float: left;
+}
+
+body{
+  margin: auto;
+  width: 1000px;
+
+}
