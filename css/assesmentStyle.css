@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background: #e3e3e3;
+}
+.container_12{
+  height: 700px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+aside li{
+margin-top: 10px;
+}
+
+
+aside {
+  height: auto;
+  padding-top: 10px;
+}
+
+.primary {
+  margin-top: 30px;
+}
+
+
+.main {
+  margin: 30px 0px;
+}
+
+section {
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.alpha {
+  margin-left:10px;
+  margin-right: 0px;
+}
