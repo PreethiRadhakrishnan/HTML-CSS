@@ -1,5 +1,5 @@
 body {
-  background: url(../img/bkbganim1.gif);
+  background: #e3e3e3;
   background-repeat:repeat;
   background-size: 100% 100%;
   font-family: sans-serif;
@@ -10,11 +10,24 @@ body {
   height: 700px;
 }
 
+nav {
+  margin-top: 40px;
+}
+
 nav li{
     display: inline;
     margin-left: 30px;
     margin-right: 10px;
     font-size: 15px;
+}
+
+.wrap h1{
+  margin-top: 25px;
+  text-transform: full-width;
+  letter-spacing: -1;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+  font-variant: small-caps;
 }
 
 .primary ul{
@@ -26,6 +39,38 @@ nav li{
   list-style-type: none;
 }
 
+.primary p{
+  font-size:15px;
+  color:blue;
+  font-weight:bolder;
+}
+
+.primary p a{
+   color:green;
+   font-weight:bolder;
+}
+
+.popular section{
+  box-sizing: border-box;
+  background: white;
+  border: 2px solid black;
+}
+
+.popular .bk{
+    display: inline-block;;
+}
+
+.popular div{
+     margin-top:10px;
+}
+
+.popular img{
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 59px;
+    height: 90px;
+
+}
 
 section h5{
   box-sizing: border-box;
@@ -38,23 +83,24 @@ h5 :hover{
   color:green;
   font-weight: bolder;
 }
+
 .hero {
   width: 700px;
-  height: 400px;
+  height: 600px;
   align-content: center;
   margin-top: 30px;
-  margin-left: 120px;
   display: block;
   border: 10px solid black;
   background: url(../img/book3.jpg);
-  background-repeat: round;
 }
 
-.popular section{
-  box-sizing: border-box;
-  background: white;
-  border: 2px solid black;
+.hero h1{
+  text-align: center;
+  padding-top: -5px;
+  margin-top: 13px;
 }
+
+
 
 nav  ul li :hover ul{
   display: block;
@@ -80,10 +126,6 @@ ul li ul li {
 ul li ul li a {display:block !important;}
 ul li ul li:hover {background: #e3e3e3;}
 
-.popular img{
-    margin-left: 50px;
-    margin-right: 2px;
-}
 
 aside li{
   display: inline;
@@ -107,14 +149,6 @@ li :hover{
   height: 90px;
 }
 
-.wrap h1{
-  margin-top: 25px;
-  text-transform: full-width;
-  letter-spacing: -1;
-  border-right: 1px solid black;
-  box-sizing: border-box;
-  font-variant: small-caps;
-}
 
 /*.wrap header{
   background-image: url('../img/earthday.jpg');
@@ -125,21 +159,55 @@ aside {
   padding-top: 10px;
 }
 
+.sub img{
+    width: 380px;
+    height: 200px;
+}
+
+.sub {
+    margin-bottom: 20px;
+}
+
+hr{
+   border-width:1px;
+   border-color:#3e3e3e;
+   margin-top:10px;
+}
+
 h2 , h6{
   text-align: center;
 }
 
-.primary {
+.first {
   margin-top: 30px;
   box-sizing: border-box;
 }
 
-.secondary {
+.second {
   margin-top: 30px;
+  box-sizing: border-box;
 }
 
-.secondary img{
-  margin-left:10px;
+.third {
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.first img{
+  width:310px;
+  height: 209px;
+
+}
+
+.second img{
+  width:310px;
+  height: 209px;
+
+}
+
+.third img{
+  width:310px;
+  height: 209px;
 }
 
  a{
@@ -169,10 +237,15 @@ section {
 
 .content {
   float: right;
-  margin-left:30px;
+  margin-left:40px;
   width: 270px;
   font-style: italic;
   font-variant: small-caps;
+  padding-left: 50px;
+}
+
+.content h1{
+    border-right: 0px;
 }
 
 .content p{
@@ -191,6 +264,7 @@ section {
   font-size: 20px;
   font-style: italic;
   font-variant: small-caps;
+  border-right: 0px;
 }
 
 .content1 p{
@@ -199,14 +273,27 @@ section {
   font-size: 17px;
 }
 
+.content1 h1{
+    border-right: 0px;
+}
+
 .img1{
   float: right;
+  padding-left: 120px;
 }
 
 .footer {
   box-sizing: border-box;
-  background: #3c3a3a;
+  background: #504A4B;
   color: #e3e3e3;
+  height: 65px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.footer .clearfix{
+  display: none;
 }
 
 .footer a{
@@ -214,24 +301,24 @@ section {
 }
 
 .footer a:hover{
-  color: white;
+  color: black;
+}
+
+.footer section p{
+  margin-bottom: -10px;
+  margin-top: -40px;
 }
 
 section ul{
   display: inline;
 }
 
-
-.foot{
-  height: 77px;
-  background: #3c3a3a;
-  margin-top: 820px;
+.link li .grid_1.alpha{
+  height: 0px;
 }
 
-.c{
-  float: left;
-}
-
-.links{
-  float: right;
+.footer .link img{
+  width: 22px;
+  height: 22px;
+  margin-top: -20px;
 }
