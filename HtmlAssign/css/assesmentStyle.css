@@ -1,15 +1,21 @@
+/*body css begining*/
 body {
   background: #e3e3e3;
   background-repeat:repeat;
   background-size: 100% 100%;
-  font-family: sans-serif;
+  font-family: 'Raleway',sans-serif;
   text-transform: capitalize;
 }
+/*body css ending*/
 
+/*container_12 css begining*/
 .container_12{
   height: 700px;
 }
+/*container_12 css ending*/
 
+/*header css begining*/
+/*nav css begining*/
 nav {
   margin-top: 40px;
 }
@@ -21,6 +27,34 @@ nav li{
     font-size: 15px;
 }
 
+nav  ul li :hover ul{
+  display: block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #6E6E6E;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li {
+  background: #6E6E6E;
+  display: block;
+}
+ul li ul li a {display:block !important;}
+ul li ul li:hover {background: #e3e3e3;}
+ul li ul li:last-child {
+  font-size:13px;
+}
+/*nav css ending*/
+
 .wrap h1{
   margin-top: 25px;
   text-transform: full-width;
@@ -29,6 +63,39 @@ nav li{
   box-sizing: border-box;
   font-variant: small-caps;
 }
+
+.wrap header{
+  background: white;
+  position: fixed;
+}
+
+.wrap header h1{
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.wrap img{
+  height: 90px;
+}
+/*header css ending*/
+
+/*hero element css begining*/
+.hero {
+  width: 700px;
+  height: 600px;
+  align-content: center;
+  margin-top: 120px;
+  display: block;
+  border: 10px solid black;
+  background: url(../img/book3.jpg);
+}
+
+.hero h1{
+  text-align: center;
+  padding-top: -5px;
+  margin-top: 13px;
+}
+/*hero element css ending*/
 
 .primary ul{
 
@@ -50,6 +117,7 @@ nav li{
    font-weight:bolder;
 }
 
+/*two column grid begining(both images)*/
 .popular section{
   box-sizing: border-box;
   background: white;
@@ -69,8 +137,9 @@ nav li{
     margin-right: 100px;
     width: 59px;
     height: 90px;
-
 }
+/*two column grid ending(both images)*/
+
 
 section h5{
   box-sizing: border-box;
@@ -84,80 +153,12 @@ h5 :hover{
   font-weight: bolder;
 }
 
-.hero {
-  width: 700px;
-  height: 600px;
-  align-content: center;
-  margin-top: 30px;
-  display: block;
-  border: 10px solid black;
-  background: url(../img/book3.jpg);
-}
-
-.hero h1{
-  text-align: center;
-  padding-top: -5px;
-  margin-top: 13px;
-}
-
-
-
-nav  ul li :hover ul{
-  display: block;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-ul li {display: inline-block;}
-ul li:hover {background: #e3e3e3;}
-ul li:hover ul {display: block;}
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-}
-ul li ul li {
-  background: #e3e3e3;
-  display: block;
-}
-ul li ul li a {display:block !important;}
-ul li ul li:hover {background: #e3e3e3;}
-
-
-aside li{
-  display: inline;
-  margin-top: 10px;
-}
 
 li :hover{
   color:black;
   font-weight: bolder;
 }
-.wrap header{
-  background: white;
-}
 
-.wrap header h1{
-  text-align: center;
-  font-variant: small-caps;
-}
-
-.wrap img{
-  height: 90px;
-}
-
-
-/*.wrap header{
-  background-image: url('../img/earthday.jpg');
-}*/
-
-aside {
-  height: auto;
-  padding-top: 10px;
-}
 
 .sub img{
     width: 380px;
@@ -179,18 +180,21 @@ h2 , h6{
 }
 
 .first {
-  margin-top: 30px;
+  margin-top: 100px;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
 .second {
   margin-top: 30px;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
 .third {
   margin-top: 30px;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
 .first img{
@@ -221,18 +225,13 @@ section h4{
 
 
 .main {
-  margin: 30px 0px;
+  margin: 30px 0px 20px 0px ;
 }
 
 section {
   box-sizing: border-box;
   padding: 15px;
   margin-top: 30px;
-}
-
-.alpha {
-  margin-left:10px;
-  margin-right: 0px;
 }
 
 .content {
@@ -282,6 +281,7 @@ section {
   padding-left: 120px;
 }
 
+/*footer css begining*/
 .footer {
   box-sizing: border-box;
   background: #504A4B;
@@ -322,3 +322,4 @@ section ul{
   height: 22px;
   margin-top: -20px;
 }
+/*footer css begining*/
