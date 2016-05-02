@@ -178,39 +178,54 @@
 					</p>
 				</section>
 
-				<section class="col-lg-3">
-					<h5><a href="#myModal" role="button" data-toggle="modal">LOGIN</a></h5>
-					<div class="modal fade" id="myModal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button class="close" data-dismiss="modal">&times;</button>
+				<div class="col-sm-6">
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Location</a></li>
+							<li><a href="#tab2" data-toggle="tab">Login/Register</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location</h4>
 
-												<h4 class="modal-title">LOGIN</h4>
-											</div><!-- end modal-header -->
-											<div class="modal-body">
-												<form class="form-horizontal">
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputName">Name</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputName" placeholder="Name" type="text">
-														</div>
-													</div>
+								<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.102262938646!2d77.65771161435255!3d12.836667921299012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c8730fb7b6b%3A0xf15089219482f760!2sWipro+Technologies%2C+EC-III%2C+Tower+8%2C!5e0!3m2!1sen!2sin!4v1462170443079"></iframe>
+							</div><!-- end tab-pane -->
 
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
-														</div>
-													</div>
+							<div class="tab-pane" id="tab2">
+							<section class="col-lg-3">
+								<h5><a href="#myModal" role="button" data-toggle="modal">LOGIN</a></h5>
+								<div class="modal fade" id="myModal">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button class="close" data-dismiss="modal">&times;</button>
 
-													<div class="form-group">
-														<div class="col-lg-12">
-															<button class="btn btn-success pull-right" type="submit">Login!</button>
-														</div>
-													</div>
-												</form>
-											</div><!-- end modal-body -->
+															<h4 class="modal-title">LOGIN</h4>
+														</div><!-- end modal-header -->
+
+														<div class="modal-body">
+															<form class="form-horizontal">
+																<div class="form-group">
+																	<label class="col-lg-2 control-label" for="inputName">Name</label>
+																	<div class="col-lg-10">
+																		<input class="form-control" id="inputName" placeholder="Name" type="text">
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+																	<div class="col-lg-10">
+																		<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<div class="col-lg-12">
+																		<button class="btn btn-success pull-right" type="submit">Login!</button>
+																	</div>
+																</div>
+															</form>
+														</div><!-- end modal-body -->
 
 											<div class="modal-footer">
 												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
@@ -219,11 +234,17 @@
 										</div><!-- end modal-content -->
 									</div><!-- end modal-dialog -->
 								</div><!-- end myModal -->
-				</section>
 
-				<section class="col-lg-3">
-					<h5><a href="#">JOIN US</a></h5>
-				</section>
+							</section>
+
+							<section class="col-lg-3">
+								<h5><a href="#">JOIN US</a></h5>
+							</section>
+
+						</div><!-- end tab-pane -->
+					</div><!-- end tab-content -->
+				</div><!-- end tabbable -->
+			</div><!-- end col-sm-6 -->
 			</div>
 			<!--three column grid ending-->
 
