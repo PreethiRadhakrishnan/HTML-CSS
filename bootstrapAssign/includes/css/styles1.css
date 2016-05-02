@@ -140,8 +140,10 @@ Notes:	 Hand coded for Udemy.com
      box-sizing: border-box;
      border: 2px solid black;
      text-align: center;
-     background: cyan;
+     background: #e3e3e3;
      font-weight: bold;
+     height: 30px;
+     padding-top: 5px;
    }
 
 
