@@ -99,13 +99,16 @@ Notes:	 Hand coded for Udemy.com
      margin-bottom: 70px;
       font-size: 24px;
       color: blue;
-
    }
 
-.carousel-caption h4{
-  font-size: 32px;
-  color: red;
-}
+   #title{
+     margin-bottom: 140px;
+   }
+
+  .carousel-caption h4{
+    font-size: 32px;
+    color: red;
+  }
 
    #slide1 {
      background: url('../../img/book3_medium.jpg') top center no-repeat;
