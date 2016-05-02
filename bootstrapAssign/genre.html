@@ -1,178 +1,367 @@
+<!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css\reset.css">
-    <link rel="stylesheet" href="css\960_12_col.css">
-    <link rel="stylesheet" href="css\text.css">
-    <link rel="stylesheet" href="css\assesmentStyle.css" >
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <title>GENRE | ARC</title>
-  </head>
-  <body>
+	<head>
 
-     <!--container_12 begining-->
-    <div class="wrap container_12">
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>ARC | THE BOOK SITE</title>
+		<meta name="description" content="">
 
-      <!--header begining-->
-      <header class="clearfix">
-        <img class="grid_2" src="img\logo.jpg" alt="logo">
-        <h1 class="grid_3">ARC</h1>
-        <nav class="grid_7">
-          <ul>
-            <li><a href="assignment1.html">HOME</a></li>
-            <li><a href="genre.html">GENRE</a></li>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!--header ending-->
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-      <!--three column grid begining-->
-      <div class="main clearfix">
-        <div class="first grid_12">
-          <h2> GENRES</h2>
-          <section class="grid_4 alpha">
-            <a href="#">
-              <p>
-                <img src="img\fiction.jpg" alt="image"/>
-              </p>
-              <h6>FICTION</h6>
-            </a>
-            <p>Fiction is the classification for any story created by the imagination,rather than based strictly on history or fact.</p>
-          </section>
-          <section class="grid_4" >
-            <a href="#">
-            <p>
-              <img src="img\examprep.jpg" alt="image"/>
-            </p>
-            <h6>EXAM PREP</h6>
-            </a>
-            <p>
-              We believe that nothing prepares you better than working through actual exam questions.
-            </p>
-          </section>
-          <section class="grid_4 omega">
-            <a href="#">
-            <p>
-              <img src="img\children.jpg" alt="image"/>
-            </p>
-            <h6>CHILDREN</h6></a>
-            <p>
-              Children's literature or juvenile literature includes stories, books, magazines, and poems that are enjoyed by children.
-              Modern children's literature is classified in two different ways: genre or the intended age of the reader.
-            </p>
-          </section>
-          </div>
-          <div class="second grid_12">
-          <section class="grid_4 alpha">
-            <a href="#">
-              <p>
-              <img src="img\nonfic1.jpg" alt="image"/>
-            </p>
-            <h6>NON-FICTION</h6></a>
-            <p>
-              Nonfiction or non-fiction is content (often, in the form of a story) whose creator, in good faith, assumes responsibility
-              for the truth or accuracy of the events, people, and/or information presented.
-            </p>
-          </section>
-          <section class="grid_4">
-            <a href="#">
-              <p>
-              <img src="img\classic.jpg" alt="image"/>
-            </p>
-            <h6>CLASSICS</h6></a>
-            <p>
-              A classic is a book accepted as being exemplary or noteworthy,
-              for example through an imprimatur such as being listed in a list of great books, or through a reader's personal opinion.
-            </p>
-          </section>
-          <section class="grid_3 omega">
-            <a href="#">
-              <p>
-              <img src="img\textbook.jpg" alt="image"/>
-            </p>
-            <h6  style="margin-left:80px">TEXTBOOKS</h6></a>
-            <p>
-              Most textbooks are accompanied by teacher guides, which provide you with supplemental teaching materials,
-              ideas, and activities to use throughout the academic year.
-            </p>
-          </section>
-        </div>
-        <div class="third grig_12">
-          <section class="grid_4 alpha">
-            <a href="#">
-              <p>
-              <img src="img\business.jpg" alt="image"/>
-            </p>
-            <h6>BUSINESS</h6></a>
-            <p>
-              Whether you're looking for a last-minute gift or want to make sure you didn't miss a must-read,
-              it's worth checking out the year's best business books.
-            </p>
-          </section>
-          <section class="grid_4">
-            <a href="#">
-              <p>
-              <img src="img\humor.jpg" alt="image"/>
-            </p>
-            <h6>HUMOR</h6></a>
-            <p>
-               Because we are here to help, we made for you a list of some of the best comedy books.
-            </p>
-          </section>
-          <section class="grid_4 omega">
-            <a href="#">
-              <p>
-              <img src="img\drama.jpg" alt="image"/>
-            </p>
-            <h6>DRAMA</h6></a>
-            <p>
-              Drama is the specific mode of fiction represented in performance.
-              The enactment of drama in theatre, performed by actors on a stage before an audience,
-              presupposes collaborative modes of production and a collective form of reception.
-            </p>
-          </section>
-        </div>
-      </div>
-      <!--three column grid ending-->
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 
-      <div class=" continue grid_12">
-        <section class="grid_10 alpha">
+		<!-- Custom CSS -->
+		<link href="includes/css/styles1.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+		<!--begin container class-->
+	 <div class="container" id="main">
+		 <div class="navbar navbar-fixed-top">
+
+ 			<!--begin container-->
+ 			<div class="container">
+
+ 				<!--callapsable window-->
+ 				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" name="button">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<!--begin logo-->
+ 				<a class="navbar-brand" href="/"><img src="img/logo.jpg" alt="Your Logo" /></a>
+ 				<!--end logo-->
+
+ 				<!--begin navCollapse-->
+ 				<div class="nav-collapse collapse navbar-responsive-collapse">
+ 					<ul class="nav navbar-nav">
+ 						<li><a href="index1.html">Home</a></li>
+ 						<li class="active"><a href="#">GENRE</a></li>
+ 						<li><a href="#">ABOUT</a></li>
+ 						<li><a href="#">CONTACT</a></li>
+ 					</ul>
+ 					<!--end nav-->
+
+ 					<!--begin navbar-form-->
+ 					<form class="navbar-form pull-left" action="index.html" method="post">
+ 						<input type="text" class="form-control" placeholder="Search this site...."  id="searchInput" name="name" value="">
+ 						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+ 					</form>
+ 					<!--end navbar-form-->
+
+ 					<ul class="nav navbar-nav pull-right">
+ 						<li class="dropdown">
+ 							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> My Account<strong class="caret"></strong></a>
+
+ 							<ul class="dropdown-menu">
+ 								<li>
+ 									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+ 								</li>
+ 								<li>
+ 									<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+ 								</li>
+ 								<li>
+ 									<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+ 								</li>
+ 								<li class="divider"></li>
+ 								<li>
+ 									<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+ 								</li>
+ 							</ul>
+
+ 						</li>
+ 					</ul>
+ 					<!--end nav pull right-->
+
+ 				</div>
+ 				<!--end navCollapse-->
+
+ 			</div>
+ 			<!--end container-->
+
+ 		</div>
+ 		<!--end navbar-->
+
+
+		<div class="row" id="featureHeading">
+			<div class="col-12">
+				<h2>GENRES</h2>
+				<p class="lead">
+					Genre is a label that characterizes elements a reader can expect in a work of literature. The major forms of literature can be written in various genres.
+					Genre is a category characterized by similarities in style, or subject matter.
+				</p>
+			</div>
+			<!--end col-12-->
+
+		</div>
+		<!--end featuresHeading-->
+
+		<!--begin features-->
+		<div class="row" id="features">
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">FICTION</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\fiction.jpg" alt="image" >
+					<p>
+						A fictional book is a non-existent book created specifically for (i.e. within) a work of fiction.
+						Fiction is the classification for any story created by the imagination,rather than based strictly on history or fact.
+					</p>
+					<a href="https://en.wikipedia.org/wiki/List_of_fictional_books" target="_blank" class="btn btn-warning btn-block">
+						Fiction Books.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">EXAM PREP</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\examprep.jpg" alt="image" >
+					<p>
+						You could be looking for help with studying a complicated subject or you maybe preparing to get into a good institution for higher studies.
+						We believe that nothing prepares you better than working through actual exam questions.
+					</p>
+					<a href="http://www.amazon.in/Exam-Preparations-Books/b?ie=UTF8&node=4149751031" target="_blank" class="btn btn-danger btn-block">
+						Exam Prep
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">CHILDREN</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\children.jpg" alt="image" >
+					<p>
+						Children's literature or juvenile literature includes stories, books, magazines, and poems that are enjoyed by children.
+						Modern children's literature is classified in two different ways: genre or the intended age of the reader.
+					</p>
+					<a href="https://en.wikipedia.org/wiki/List_of_children%27s_classic_books" target="_blank" class="btn btn-info btn-block">
+						Children's Literature.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+		</div>
+		<!--end features-->
+
+		<!--begin features-->
+		<div class="row" id="features1">
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">NON-FICTION</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\nonfic1.jpg" alt="image" >
+					<p>
+						Nonfiction or non-fiction is content (often, in the form of a story) whose creator, in good faith, assumes responsibility
+						for the truth or accuracy of the events, people, and/or information presented.
+					</p>
+					<a href="https://www.goodreads.com/list/tag/non-fiction" target="_blank" class="btn btn-warning btn-block">
+						Non-Fiction Books.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">CLASSICS</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\classic.jpg" alt="image" >
+					<p>
+						A classic is a book accepted as being exemplary or noteworthy,
+						for example through an imprimatur such as being listed in a list of great books, or through a reader's personal opinion.
+					</p>
+					<a href="https://www.goodreads.com/list/tag/classic" target="_blank" class="btn btn-danger btn-block">
+						Classics.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">TEXTBOOKS</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\textbook.jpg" alt="image" >
+					<p>
+						Most textbooks are accompanied by teacher guides , which provide you with supplemental teaching materials ,
+						ideas , and activities to use throughout the academic year.
+						Textbooks for all subject available for CBSE , ICSE , IB / IGCSE , SSC and all state syllabuses.
+					</p>
+					<a href="http://uvabookstores.com/site_textbook_list.asp" target="_blank" class="btn btn-info btn-block">
+						Textbooks for all syllabus.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+		</div>
+		<!--end features1-->
+
+		<!--begin features2-->
+		<div class="row" id="features2">
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">BUSINESS</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\business.jpg" alt="image" >
+					<p>
+						Whether you're looking for a last-minute gift or want to make sure you didn't miss a must-read.
+						Here's a selection of books on innovation, entrepreneurship, success, and even what makes different people tick.
+					</p>
+					<a href="https://www.goodreads.com/list/tag/business" target="_blank" class="btn btn-warning btn-block">
+						Business Books.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">HUMOUR</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\humor.jpg" alt="image" >
+					<p>
+						Discover the best comedy books of all time.
+						Comedians are always writing books about themselves, or about comedy history, or about writing, or just fun stuff called “fiction.”
+						And a lot of it is worth reading.
+					</p>
+					<a href="https://www.goodreads.com/list/tag/humor" target="_blank" class="btn btn-danger btn-block">
+						Comedy Novels.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">DRAMA</h3>
+					</div>
+					<!--end panel-heading-->
+					<img src="img\drama.jpg" alt="image" >
+					<p>
+						Drama is the specific mode of fiction represented in performance.
+						The enactment of drama in theatre, performed by actors on a stage before an audience,
+						presupposes collaborative modes of production and a collective form of reception.
+					</p>
+					<a href="https://www.goodreads.com/list/tag/drama" target="_blank" class="btn btn-info btn-block">
+						Drama-based Novels.
+					</a>
+				</div>
+				<!--end panel-->
+			</div>
+			<!--end feature-->
+
+		</div>
+		<!--end features2-->
+
+
+
+      <div class=" continue row">
+        <section class="col-lg-10">
           <div></div>
         </section>
-        <section class="grid_2 omega">
+        <section class="col-lg-2">
           <a href="#"><h6>More Genres...<h6></a>
         </section>
       </div>
+		</div>
+		<!--end container-->
 
-      <!--footer begining-->
-      <div class="footer grid_12">
-        <section class="grid_8 alpha">
-          <p >						Copyrights © 2016 All Rights Reserved by Arc Inc. <br>
-            <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
-          </p>
-        </section>
-        <section class="abt grid_2">
-          <h6>Navigation</h6>
-            <ul class="unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Links</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-        </section>
-        <section class=" link grid_2 omega">
-          <h6>Follow Us</h6>
-            <ul class="unstyled">
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Google Plus</a></li>
-            </ul>
-        </section>
-      </div>
-      <!--footer begining-->
+			<!--begin footer-->
+						<footer>
+							<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-2">
+								<h6>Copyright &copy; 2016 ARC</h6>
+								</div><!-- end col-sm-2 -->
+
+								<div class="col-sm-4">
+									<h6>About Us</h6>
+									<p></p>
+								</div><!-- end col-sm-4 -->
+
+								<div class="col-sm-2">
+									<h6>Navigation</h6>
+									<ul class="unstyled">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Links</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div><!-- end col-sm-2 -->
+
+								<div class="col-sm-2">
+									<h6>Follow Us</h6>
+									<ul class="unstyled">
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Google Plus</a></li>
+									</ul>
+								</div><!-- end col-sm-2 -->
+
+								<div class="col-sm-2">
+									<h6>Created by <span class="glyphicon glyphicon-heart"></span> by ARC.ltd</h6>
+								</div><!-- end col-sm-2 -->
+							</div><!-- end row -->
+					</div><!-- end container -->
+				</footer>
+			<!--end footer-->
+
+      <!-- All Javascript at the bottom of the page for faster page loading -->
+
+      <!-- First try for the online version of jQuery-->
+      <script src="http://code.jquery.com/jquery.js"></script>
+
+      <!-- If no online access, fallback to our hardcoded version of jQuery -->
+      <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+      <!-- Bootstrap JS -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+      <!-- Custom JS -->
+      <script src="includes/js/script.js"></script>
 
     </div>
     <!--container_12 ending-->
