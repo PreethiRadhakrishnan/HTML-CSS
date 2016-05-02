@@ -11,11 +11,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
 		<link href="includes/css/styles1.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 		<!-- Include Modernizr in the head, before any other Javascript -->
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -43,7 +44,7 @@
  				<!--begin navCollapse-->
  				<div class="nav-collapse collapse navbar-responsive-collapse">
  					<ul class="nav navbar-nav">
- 						<li class="active"><a href="#">Home</a></li>
+ 						<li class="active"><a href="#">HOME</a></li>
  						<li class="dropdown">
  							<a href="genre.html" class="dropdown-toggle" data-toggle="dropdown">GENRE<strong class="caret"></strong></a>
  							<ul class="dropdown-menu">
@@ -173,7 +174,10 @@
 					<p>
 						Discover all-new, rising authors.
 						Independent writers offer both entertaining fiction/romance for your enjoyment and
-						non-fiction to help you find info from self-help to biz growth.<br>
+						non-fiction to help you find info from self-help to biz growth.
+						Download over 800 free eBooks to your Kindle, iPad/iPhone, computer, smart phone or ereader.
+						Collection includes great works of fiction, non-fiction and poetry, including works by Asimov, Jane Austen, Philip K. Dick, F. Scott Fitzgerald, Neil Gaiman, Tolstoy, Dostoevsky, Shakespeare, Ernest Hemingway, Virginia Woolf & James Joyce.
+						Also please see our collection 700 Free Audio Books: Download Great Books for Free, where you can download more great books to your computer or mp3 player.<br>
 						<a href="#">Read more...</a>
 					</p>
 				</section>
@@ -206,30 +210,26 @@
 														<div class="modal-body">
 															<form class="form-horizontal">
 																<div class="form-group">
-																	<label class="col-lg-2 control-label" for="inputName">Name</label>
-																	<div class="col-lg-10">
-																		<input class="form-control" id="inputName" placeholder="Name" type="text">
+																	<label class="col-sm-4 control-label" for="inputEmail">Email</label>
+																	<div class="col-sm-8">
+																		<input class="form-control" id="inputEmail" placeholder="Email" type="text">
 																	</div>
 																</div>
 
 																<div class="form-group">
-																	<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-																	<div class="col-lg-10">
-																		<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+																	<label class="col-sm-4 control-label" for="inputPassword">Password</label>
+																	<div class="col-sm-8">
+																		<input class="form-control" id="inputPassword" placeholder="Password" type="email">
 																	</div>
 																</div>
 
-																<div class="form-group">
-																	<div class="col-lg-12">
-																		<button class="btn btn-success pull-right" type="submit">Login!</button>
-																	</div>
-																</div>
 															</form>
 														</div><!-- end modal-body -->
 
-											<div class="modal-footer">
-												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-											</div><!-- end modal-footer -->
+														<div class="modal-footer">
+											<button class="btn btn-primary" type="button">Login</button> <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+										</div><!-- end modal-footer -->
+
 
 										</div><!-- end modal-content -->
 									</div><!-- end modal-dialog -->
@@ -254,47 +254,34 @@
 
 			<!--two column grid begining(both images)-->
 			<div class="popular">
-				<div class="page-header">
+				<div class="container text-center">
 					<h2>POPULAR READS</h2>
 				</div>
 
-
-
-					<div class="row">
-						<section class="col-lg-6">
-							<h4>FICTION</h4>
-							<div class="bk">
-								<a href="#"><img src="img/bk1.jpg" alt="fiction"></a>
-								<a href="#"><img src="img/bk2.jpg" alt="fiction"></a>
-							</div>
-						</section>
-						<section class="col-lg-6">
-							<h4>NON-FICTION</h4>
-							<div class="bk">
-								<a href="#"><img src="img/bk3.jpg" alt="non-fiction"></a>
-								<a href="#"><img src="img/bk4.jpg" alt="non_fiction"></a>
-							</div>
-						</section>
-					</div>
-
-
-			<div class="row">
-				<section class="col-lg-6">
-					<h4>CHILDREN'S</h4>
-					<div class="bk">
-						<a href="#"><img src="img/bk5.jpg" alt="children's"></a>
-						<a href="#"><img src="img/bk6.jpg" alt="children's"></a>
-					</div>
-				</section>
-				<section class="col-lg-6">
-					<h4>BUSINESS</h4>
-					<div class="bk">
-						<a href="#"><img src="img/bk7.jpg" alt="business"></a>
-						<a href="#"><img src="img/bk8.jpg" alt="business"></a>
-					</div>
-				</section>
-			</div>
-
+				  <div class="row" id="fic">
+						<h3>FICTION</h3>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk1.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk2.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk9.jpg" alt="img"></a></div>
+				  </div>
+				  <div class="row" id="nonfic">
+						<h3>NON-FICTION</h3>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk3.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk4.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk10.jpg" alt="img"></a></div>
+				  </div>
+				  <div class="row" id="children">
+						<h3>CHILDREN</h3>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk5.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk6.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk11.jpg" alt="img"></a></div>
+				  </div>
+				  <div class="row" id="business">
+						<h3>BUSINESS</h3>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk7.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk8.jpg" alt="img"></a></div>
+				  	<div class="col-lg-4"><a href="#"><img src="img/bk12.jpg" alt="img"></a></div>
+				  </div>
 
 			<!--two column grid ending-->
 
@@ -352,7 +339,7 @@
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 
 	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="includes/js/bootstrap.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="includes/js/script.js"></script>
