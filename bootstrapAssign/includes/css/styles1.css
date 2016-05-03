@@ -85,6 +85,10 @@ Notes:	 Hand coded for Udemy.com
      width: 200px;
    }
 
+    .navbar-form {
+      padding-right: 0px;
+    }
+
    .navbar-brand {
      padding: 9px 10px;
    }
@@ -154,9 +158,7 @@ Notes:	 Hand coded for Udemy.com
 
    .primary section h5{
      box-sizing: border-box;
-     border: 2px solid black;
      text-align: center;
-     background: #e3e3e3;
      font-weight: bold;
      height: 30px;
      padding-top: 5px;
@@ -213,15 +215,6 @@ Notes:	 Hand coded for Udemy.com
 
   #myCarousel .item {
     height: 310px;
-  }
-  #slide1 {
-    background: url('../../img/b2_small.jpg') top center no-repeat;
-  }
-  #slide2 {
-    background: url('../../img/b1_small.jpg') top center no-repeat;
-  }
-  #slide3 {
-    background: url('../../img/b3_small.jpg') top center no-repeat;
   }
 
   .carousel-caption {
